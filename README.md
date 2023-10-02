@@ -40,13 +40,13 @@ Clone kickstart.nvim:
 
 ```sh
 # on Linux and Mac
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/norepository/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 
 ```
 # on Windows
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
+git clone https://github.com/norepository/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
 ```
 
 ### Post Installation
@@ -61,8 +61,6 @@ nvim --headless "+Lazy! sync" +qa
 
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that you can modify) and then installing you can install to your machine using the methods above.
 
-> **NOTE**  
-> Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart.nvim.git`
 
 ### Configuration And Extension
 
