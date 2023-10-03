@@ -119,15 +119,9 @@ require('lazy').setup({
   },
 
   {
-    -- Theme: TokyoNight
-    'folke/tokyonight.nvim',
-    priority = 1000,
-    lazy = false,
-    config = function()
-      vim.cmd.colorscheme 'tokyonight'
-    end,
+    --Theme: rose-pine
+    { 'rose-pine/neovim', name = 'rose-pine' }
   },
-
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
