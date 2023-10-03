@@ -60,8 +60,7 @@ require('lazy').setup({
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
 
-      -- Useful status updates for LSP
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
+      -- Useful status updates for LSP NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
@@ -195,7 +194,19 @@ require('lazy').setup({
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   -- { import = 'custom.plugins' },
+  
+  -- Harpoon
+  {
+    'ThePrimeagen/harpoon'
+  },
+  
+  -- Autoclose
+  {
+    'm4xshen/autoclose.nvim'
+  }
 }, {})
+
+require("autoclose").setup()
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
