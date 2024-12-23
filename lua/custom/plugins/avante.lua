@@ -8,7 +8,7 @@ return {
     auto_suggestions_provider = 'copilot',
     copilot = {
       endpoint = 'https://api.githubcopilot.com',
-      model = 'gpt-4o',
+      model = 'claude-3.5-sonnet',
       proxy = nil, -- [protocol://]host[:port] Use this proxy
       allow_insecure = false, -- Allow insecure server connections
       timeout = 30000, -- Timeout in milliseconds
@@ -117,14 +117,6 @@ return {
           use_absolute_path = true,
         },
       },
-    },
-    {
-      -- Make sure to set this up properly if you have lazy=true
-      'MeanderingProgrammer/render-markdown.nvim',
-      opts = {
-        file_types = { 'markdown', 'Avante' },
-      },
-      ft = { 'markdown', 'Avante' },
     },
   },
 }
